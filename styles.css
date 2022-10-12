@@ -102,18 +102,17 @@
     grid-template: 1fr 1fr / repeat(3, 1fr);
     padding: 20px 10px;
 }
-
-.main-content .projects {
+.main-content .item {
     grid-area: 1 / 1 / 3 / 3;
+}
+
+.main-content .item .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(80px, 1fr);
     gap: 10px;
 }
-/* .main-content .projects h2 {
-    display: absolute;
-} */
-.main-content .projects .content-items {
+.main-content .item .projects .content-items {
     background-color: var(--items-background-color);
     padding: 10px;
     text-align: justify;
