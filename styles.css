@@ -6,17 +6,16 @@
 
 
 :root {
-    --default-background: rgb(112, 117, 124);
+    --default-background: rgb(168, 170, 171);
     --blue-background: rgb(0, 118, 164); 
     --blue-background-text-color: white;
 }
 
 .container {
-    width: 100vw;
+    min-width: 100vw;
     display: grid;
     grid-template: minmax(1fr, 200px) 2fr 2fr / 1fr 2fr 1fr;
-    row-gap: 20px;
-    column-gap: 10px;
+    background-color: var(--default-background);
 }
 
 
@@ -25,22 +24,34 @@
     grid-area: 1 / 2 / 2 / 4;
     display: grid;
     grid-template: 1fr 1fr / 1fr;
-    padding: 20px;
+    padding: 5px 20px;
+    background-color: white;
+
     border: 1px solid black;
 }
-
 .header > * {
     padding: 0px 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header div .profile {
+    display: flex;
+    align-items: center;
+}
+.header div .profile * {
+    margin-right: 5px;
+}
+.header div .profile *:first-child {
+    margin-right: 15px;
 }
 .greeting {
     width: 100%;
 }
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template: 1fr / repeat(3, 70px);
+    gap: 5px;
 }
 .nav button {
     padding: 5px 10px;
@@ -53,12 +64,10 @@
 .nav button:hover {
     cursor: pointer;
 }
-
 .profile img {
     height: 30px;
     width: 30px;
 }
-
 .greeting img {
     height: 50px;
     width: 50px;
@@ -88,4 +97,16 @@
 /* main-content */
 .main-content {
     grid-area: 2 / 2 / 4 / 4;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+}
+
+.main-content .projects {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.trending img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
