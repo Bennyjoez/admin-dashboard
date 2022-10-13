@@ -40,21 +40,29 @@
     align-items: center;
 }
 .header .search-container {
-    border: 1px solid black;
+    border: 1px solid rgb(192, 127, 127);
 }
 .header .search-container .search{
-    flex: 1;
+    width: 50%;
+    display: flex;
+    border: 1px solid black;
 }
-
+.header .search-container .search i {
+    color: var(--blue-background);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+}
 .header .search input {
     flex: 1;
-    min-width: 100px;
     height: 30px;
     background-color: var(--default-background);
     border: none;
     padding: 5px 20px;
+    margin-left: 10px;
     text-align: center;
     border-radius: 20px;
+    font-size: 18px;
 }
 .header .search-container .profile {
     display: flex;
