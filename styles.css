@@ -30,6 +30,8 @@
     padding: 5px 20px;
     background-color: var(--items-background-color);
     box-shadow: 0 2px 4px 1px gray;
+    justify-content: center;
+    align-items: center;
 }
 .header > * {
     padding: 0px 15px;
@@ -37,6 +39,13 @@
     justify-content: space-between;
     align-items: center;
 }
+.header .search-container {
+    border: 1px solid black;
+}
+.header .search-container .search{
+    flex: 1;
+}
+
 .header .search input {
     flex: 1;
     min-width: 100px;
@@ -47,9 +56,17 @@
     text-align: center;
     border-radius: 20px;
 }
-.header div .profile {
+.header .search-container .profile {
     display: flex;
     align-items: center;
+    width: 300px;
+}
+.header .greeting .first {
+    display: flex;
+    flex-direction: row;
+}
+.header .greeting .first .message {
+    margin-left: 10px;
 }
 .header div .profile * {
     margin-right: 5px;
