@@ -167,8 +167,7 @@
     grid-area: 2 / 2 / 4 / 4;
     display: grid;
     grid-template: 1fr 1fr / repeat(3, 1fr);
-    column-gap: 30px;
-    padding: 20px 10px;
+    gap: 20px;
 }
 .main-content h2 {
     margin: 10px;
@@ -185,7 +184,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: repeat(auto-fill, minmax(500px, 1fr));
     gap: 10px;
-
 }
 .main-content .item .projects .content-items {
     background-color: var(--items-background-color);
