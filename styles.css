@@ -29,8 +29,7 @@
     grid-template: 1fr 1fr / 1fr;
     padding: 5px 20px;
     background-color: var(--items-background-color);
-
-    border: 1px solid black;
+    box-shadow: 0 2px 4px 1px gray;
 }
 .header > * {
     padding: 0px 15px;
