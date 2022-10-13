@@ -10,6 +10,7 @@
     --blue-background: rgb(0, 118, 164); 
     --blue-background-text-color: white;
     --items-background-color: white;
+    --sidebar-headings-color: rgb(255, 61, 61);
 }
 
 .container {
@@ -84,14 +85,32 @@
     padding: 30px;
     grid-area: 1 / 1 / 4 / 2;
 }
+.sidebar .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .sidebar .navigation-menu ul {
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+    text-align: center;
 }
 .sidebar .navigation-menu ul li {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    left: 20px;
+}
+.sidebar .navigation-menu ul li, .sidebar .heading  {
+    margin-bottom: 15px;
+}
+.sidebar .navigation-menu ul li i, .sidebar .heading i {
+    margin-right: 20px;
+}
+.sidebar .navigation-menu ul li h2, .sidebar .heading h2 {
+    color: var(--sidebar-headings-color);
 }
 
 
