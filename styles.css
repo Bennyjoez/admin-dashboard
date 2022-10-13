@@ -15,7 +15,6 @@
 }
 
 .container {
-    min-width: 100vw;
     min-height: 100vh;
     display: grid;
     grid-template: minmax(1fr, 200px) 2fr 2fr / 1fr 2fr 1fr;
